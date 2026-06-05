@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f2ee;
+  color: #222;
+}
+
+.header {
+  background: #8b0000;
+  color: #fff;
+  height: 62px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #ffd6d6;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 330px;
+  background: linear-gradient(rgba(80,0,0,0.72), rgba(80,0,0,0.72)),
+              url("images/banner-vinos.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 50px 8%;
+}
+
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 600px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.btn-hero {
+  display: inline-block;
+  background: #fff;
+  color: #8b0000;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.filters {
+  padding: 18px 20px;
+  background: #fff4f4;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.filters select,
+.filters input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#buscador {
+  min-width: 220px;
+}
+
+.section-title {
+  text-align: center;
+  margin: 35px 0 15px;
+  color: #6d0000;
+}
+
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 30px;
+}
+
+.producto {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-6px);
+}
+
+.producto img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.badge {
+  display: inline-block;
+  background: #8b0000;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.producto h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.producto .descripcion {
+  font-size: 14px;
+  color: #555;
+  min-height: 40px;
+}
+
+.precio {
+  font-size: 20px;
+  color: #8b0000;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.producto button {
+  background: #8b0000;
+  color: white;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.producto button:hover {
+  background: #5e0000;
+}
+
+.cart-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-content {
+  background: white;
+  width: 90%;
+  max-width: 480px;
+  padding: 25px;
+  border-radius: 14px;
+  position: relative;
+}
+
+.close-cart {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.btn-clear,
+.btn-whatsapp {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-clear {
+  background: #333;
+  color: white;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 40px;
+}
+
+@media (max-width: 1000px) {
+  .productos-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    background: #8b0000;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .productos-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 18px;
+  }
+
+  .producto img {
+    height: 230px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productos-container {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #buscador {
+    width: 100%;
+  }
+}

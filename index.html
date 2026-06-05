@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lassos Vinos | Tienda Online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">Lassos Vinos</div>
+
+  <nav class="nav" id="nav">
+    <a href="#" data-tipo="todos">Inicio</a>
+    <a href="#" data-tipo="tinto">Vinos Tintos</a>
+    <a href="#" data-tipo="blanco">Vinos Blancos</a>
+    <a href="#" data-tipo="rosado">Vinos Rosados</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <button class="menu-btn" id="menu-btn">☰</button>
+
+  <div class="cart-icon" id="cart-icon">
+    🛒 <span id="cart-count">0</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Vinos premium para cada ocasión</h1>
+    <p>Descubre tintos, blancos y rosados seleccionados para regalar, compartir o acompañar tus comidas favoritas.</p>
+    <a href="#productos" class="btn-hero">Ver catálogo</a>
+  </div>
+</section>
+
+<section class="filters">
+  <label>Tipo:</label>
+  <select id="tipo">
+    <option value="todos">Todos</option>
+    <option value="tinto">Tinto</option>
+    <option value="blanco">Blanco</option>
+    <option value="rosado">Rosado</option>
+  </select>
+
+  <label>Precio máximo:</label>
+  <input type="range" id="precio" min="50000" max="500000" value="500000" step="10000">
+  <span id="precio-value">$500.000</span>
+
+  <input type="text" id="buscador" placeholder="Buscar vino...">
+</section>
+
+<main>
+  <h2 class="section-title">Catálogo de vinos</h2>
+  <section id="productos" class="productos-container"></section>
+</main>
+
+<div class="cart-modal" id="cart-modal">
+  <div class="cart-content">
+    <button class="close-cart" id="close-cart">×</button>
+    <h2>Carrito de compras</h2>
+    <div id="cart-items"></div>
+    <h3>Total: $<span id="cart-total">0</span></h3>
+    <button class="btn-clear" id="vaciar-carrito">Vaciar carrito</button>
+    <button class="btn-whatsapp" id="comprar-whatsapp">Comprar por WhatsApp</button>
+  </div>
+</div>
+
+<footer id="contacto">
+  <p>© 2026 Lassos Vinos | Todos los derechos reservados</p>
+  <p>Contacto: info@lassosvinos.com | Bogotá, Colombia</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
