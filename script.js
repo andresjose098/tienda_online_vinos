@@ -4,7 +4,7 @@ const productosData = [
     nombre: "Barolo DOCG 2021",
     tipo: "tinto",
     precio: 320000,
-    imagen: "images/vino1.png",
+    imagen: "images/vino1.jpg",
     descripcion: "Vino tinto elegante, ideal para carnes rojas y cenas especiales.",
     etiqueta: "Premium"
   },
@@ -13,7 +13,7 @@ const productosData = [
     nombre: "Chardonnay 2022",
     tipo: "blanco",
     precio: 180000,
-    imagen: "images/vino2.png",
+    imagen: "images/vino2.jpg",
     descripcion: "Vino blanco fresco, perfecto para pescados, pastas y mariscos.",
     etiqueta: "Nuevo"
   },
@@ -22,7 +22,7 @@ const productosData = [
     nombre: "Rosé Provence 2021",
     tipo: "rosado",
     precio: 150000,
-    imagen: "images/vino3.png",
+    imagen: "images/vino3.jpg",
     descripcion: "Rosado suave y aromático, ideal para tardes cálidas y regalos.",
     etiqueta: "Más vendido"
   },
@@ -31,7 +31,7 @@ const productosData = [
     nombre: "Malbec Reserva 2020",
     tipo: "tinto",
     precio: 210000,
-    imagen: "images/vino4.png",
+    imagen: "images/vino4.jpg",
     descripcion: "Tinto intenso con cuerpo, recomendado para asados y quesos maduros.",
     etiqueta: "Reserva"
   },
@@ -40,7 +40,7 @@ const productosData = [
     nombre: "Cabernet Sauvignon",
     tipo: "tinto",
     precio: 165000,
-    imagen: "images/vino1.png",
+    imagen: "images/vino1.jpg",
     descripcion: "Vino tinto seco, con notas a frutos rojos y especias.",
     etiqueta: "Oferta"
   },
@@ -49,7 +49,7 @@ const productosData = [
     nombre: "Sauvignon Blanc",
     tipo: "blanco",
     precio: 135000,
-    imagen: "images/vino2.png",
+    imagen: "images/vino2.jpg",
     descripcion: "Blanco ligero y cítrico, ideal para acompañar comida fresca.",
     etiqueta: "Fresco"
   },
@@ -58,7 +58,7 @@ const productosData = [
     nombre: "Rosado Especial",
     tipo: "rosado",
     precio: 120000,
-    imagen: "images/vino3.png",
+    imagen: "images/vino3.jpg",
     descripcion: "Vino rosado delicado, con aromas frutales y final suave.",
     etiqueta: "Especial"
   },
@@ -67,7 +67,7 @@ const productosData = [
     nombre: "Merlot Clásico",
     tipo: "tinto",
     precio: 145000,
-    imagen: "images/vino4.png",
+    imagen: "images/vino4.jpg",
     descripcion: "Tinto amable, equilibrado y fácil de disfrutar.",
     etiqueta: "Clásico"
   }
